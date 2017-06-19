@@ -12,18 +12,36 @@ from a mobile app authorized for access by astronauts only
 
 + Response 200 (application/json)
 
-        [
-            {  
-                "Id":3,
-                "coord":{  
-                    "lat":145.77,
-                    "lon":16.92
-                },
-                "MachineInfo":{  
-                    "DateDeployed":"2017-04-25, 14:00:59",
-                    "MachineCode":"Extraordinary"
-                }
+        
+
+### Create a New Question [POST]
+
+You may create your own question using this action. It takes a JSON
+object containing a question and a collection of answers in the
+form of choices.
+
++ Request (application/json)
+
+        {  
+            "Id":3,
+            "coord":{  
+              "lat":145.77,
+              "lon":16.92
+            },
+           
+           "MachineInfo":{  
+              "DateDeployed":"2017-04-25, 14:00:59",
+              "MachineCode":"Extraordinary"
             }
+        }
+
+
+    + Headers (actual but need help what it looks like)
+    
+    
+            
+    + Body (actual)      
+            [
             
             {  
                 "MachineId":3,
@@ -37,34 +55,16 @@ from a mobile app authorized for access by astronauts only
                 }
             }
 
-   
-        ]
-
-### Create a New Question [POST]
-
-You may create your own question using this action. It takes a JSON
-object containing a question and a collection of answers in the
-form of choices.
-
-+ Request (application/json)
-
-        {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
             ]
-        }
+            
+            
+    + Response 201 (application/json) - sample
 
-+ Response 201 (application/json)
-
-    + Headers
+    + Headers (sample)
 
             Location: /questions/2
 
-    + Body
+    + Body (sample)
 
             {
                 "question": "Favourite programming language?",
