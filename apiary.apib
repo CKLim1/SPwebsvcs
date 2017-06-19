@@ -13,25 +13,31 @@ from a mobile app authorized for access by astronauts only
 + Response 200 (application/json)
 
         [
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 2048
-                    }, {
-                        "choice": "Python",
-                        "votes": 1024
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 512
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 256
-                    }
-                ]
+            {  
+                "Id":3,
+                "coord":{  
+                    "lat":145.77,
+                    "lon":16.92
+                },
+                "MachineInfo":{  
+                    "DateDeployed":"2017-04-25, 14:00:59",
+                    "MachineCode":"Extraordinary"
+                }
             }
+            
+            {  
+                "MachineId":3,
+                 "coord":{  
+                    "lat":145.77,
+                    "lon":16.92
+                },
+               "MachineInfo":{  
+                  "DateDeployed":"2017-04-25, 14:00:59",
+                  "MachineCode":"Extraordinary"
+                }
+            }
+
+   
         ]
 
 ### Create a New Question [POST]
