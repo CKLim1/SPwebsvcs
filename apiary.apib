@@ -6,13 +6,16 @@ HOST: http://polls.apiblueprint.org/
 The API must be able to add newly installed or back-in-service weather machine’s info 
 from a mobile app authorized for access by astronauts only  
 
-## Questions Collection [/questions]
+## Questions Collection [/machines]
 
 ### List All Questions [GET]
 
 + Response 200 (application/json)
 
-        
+    + Header
+
+            Authorization: Basic
+  
 
 ### Create a New Question [POST]
 
